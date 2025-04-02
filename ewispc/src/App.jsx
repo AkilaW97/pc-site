@@ -6,7 +6,7 @@ import NewsletterSignup from './components/Home/NewsletterSignup';
 import ClientCarousel from './components/Home/ClientCarousel';
 import Footer from './components/Footer';
 import HomeElectronics from './components/pages/HomeSolutions/HomeElectronics';
-//import WorkElectronics from './components/pages/WorkSolutions/WorkElectronics';
+import WorkElectronics from './components/pages/WorkSolutions/WorkElectronics';
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
             <Route path="/home/Home-Electronics" element={<HomeElectronics />} />
             
             {/* Work Solutions Category Pages */}
-            {/* <Route path="/work/Work-Electronics" element={<WorkElectronics />} /> */}
+            <Route path="/work/Work-Electronics" element={<WorkElectronics />} />
 
           </Routes>
         </main>
