@@ -1,0 +1,18 @@
+[
+    {
+      "id": "prod-1",
+      "name": "Smart TV",
+      "categories": ["electronics-home", "electronics-work"],
+      "price": 899,
+      "description": "4K UHD with HDR",
+      "images": ["/assets/tv.webp"]
+    },
+    {
+      "id": "prod-2",
+      "name": "Ergonomic Chair",
+      "categories": ["furniture-home"],
+      "price": 249,
+      "description": "Comfortable home office chair",
+      "images": ["/assets/chair.webp"]
+    }
+  ]

@@ -60,14 +60,14 @@ const Navigation = () => {
           {openSubMenu === 'products' && (
             <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 border border-gray-200 z-[9999]">
               <Link
-                to="/home-solutions"
+                to="/home/Home-Electronics"
                 className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors"
                 onClick={handleNavClick}
               >
                 Home Solutions
               </Link>
               <Link
-                to="/work-solutions"
+                to="/work/Work-Electronics"
                 className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors"
                 onClick={handleNavClick}
               >

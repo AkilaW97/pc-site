@@ -1,4 +1,3 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Hero from './components/Home/Hero';
 import QualitySection from './components/Home/QualitySection';
@@ -6,7 +5,8 @@ import WhyChooseUs from './components/Home/WhyChooseUs';
 import NewsletterSignup from './components/Home/NewsletterSignup';
 import ClientCarousel from './components/Home/ClientCarousel';
 import Footer from './components/Footer';
-import HomeSolutions from './components/HomeSolutions';
+import HomeElectronics from './components/pages/HomeSolutions/HomeElectronics';
+//import WorkElectronics from './components/pages/WorkSolutions/WorkElectronics';
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <div className="min-h-screen flex flex-col">
         <main className="flex-grow">
           <Routes>
+            {/* Main Home Page */}
             <Route path="/" element={
               <>
                 <Hero />
@@ -23,7 +24,13 @@ function App() {
                 <ClientCarousel />
               </>
             } />
-            <Route path="/home-solutions" element={<HomeSolutions />} />
+
+            {/* Home Solutions Category Pages */}
+            <Route path="/home/Home-Electronics" element={<HomeElectronics />} />
+            
+            {/* Work Solutions Category Pages */}
+            {/* <Route path="/work/Work-Electronics" element={<WorkElectronics />} /> */}
+
           </Routes>
         </main>
         <Footer />

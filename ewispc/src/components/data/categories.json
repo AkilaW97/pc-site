@@ -1,0 +1,10 @@
+{
+    "home": [
+      { "id": "electronics-home", "name": "Electronics", "slug": "electronics" },
+      { "id": "furniture-home", "name": "Furniture", "slug": "furniture" }
+    ],
+    "work": [
+      { "id": "electronics-work", "name": "Electronics", "slug": "electronics" },
+      { "id": "workstation-pcs", "name": "Workstation PCs", "slug": "workstation-pcs" }
+    ]
+  }

@@ -1,5 +1,4 @@
 // src/pages/LaptopNotebook.jsx
-import Header from "./Header";
 import Footer from "./Footer"; 
 
 const LaptopNotebook = () => {
