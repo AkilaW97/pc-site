@@ -1,51 +1,427 @@
 {
-    "categories": [
-      {
-        "id": "laptops",
-        "name": "Laptops",
-        "solutions": ["home", "work"],
-        "products": [
-          {
-            "id": "ultrabook-pro",
-            "name": "UltraBook Pro",
-            "images": ["/placeholder-laptop.jpg"],
-            "description": "Sleek, lightweight laptop for professionals.",
-            "specs": {
-              "Processor": "Intel i7",
-              "RAM": "16GB",
-              "Storage": "512GB SSD"
-            }
-          },
-          {
-            "id": "gaming-laptop",
-            "name": "Gaming Laptop",
-            "images": ["/placeholder-laptop.jpg"],
-            "description": "High-performance laptop for gamers.",
-            "specs": {
-              "Processor": "AMD Ryzen 9",
-              "RAM": "32GB",
-              "Storage": "1TB NVMe SSD"
-            }
+  "categories": [
+    {
+      "id": "all-in-one",
+      "name": "All in One",
+      "solutions": ["home", "work"],
+      "products": [
+        {
+          "id": "all-in-one-1",
+          "name": "All-in-One PC Basic",
+          "images": ["/placeholder-all-in-one.jpg"],
+          "description": "Compact all-in-one computer for home and office use.",
+          "specs": {
+            "Processor": "Intel i5",
+            "RAM": "8GB",
+            "Storage": "256GB SSD",
+            "Screen Size": "24\""
           }
-        ]
-      },
-      {
-        "id": "printers",
-        "name": "Printers",
-        "solutions": ["work"],
-        "products": [
-          {
-            "id": "laser-printer",
-            "name": "LaserJet Pro",
-            "images": ["/placeholder-printer.jpg"],
-            "description": "Fast office printer.",
-            "specs": {
-              "Type": "Laser",
-              "Speed": "40ppm",
-              "Connectivity": "Wi-Fi, Ethernet"
-            }
+        },
+        {
+          "id": "all-in-one-2",
+          "name": "All-in-One Pro",
+          "images": ["/placeholder-all-in-one.jpg"],
+          "description": "High-performance all-in-one with touchscreen.",
+          "specs": {
+            "Processor": "Intel i7",
+            "RAM": "16GB",
+            "Storage": "512GB SSD",
+            "Screen Size": "27\""
           }
-        ]
-      }
-    ]
-  }
+        }
+      ]
+    },
+    {
+      "id": "desktop",
+      "name": "Desktop",
+      "solutions": ["home", "work"],
+      "products": [
+        {
+          "id": "desktop-1",
+          "name": "Home Desktop",
+          "images": ["/placeholder-desktop.jpg"],
+          "description": "Affordable desktop for everyday tasks.",
+          "specs": {
+            "Processor": "AMD Ryzen 5",
+            "RAM": "8GB",
+            "Storage": "1TB HDD"
+          }
+        },
+        {
+          "id": "desktop-2",
+          "name": "Workstation Pro",
+          "images": ["/placeholder-desktop.jpg"],
+          "description": "Powerful desktop for professional workloads.",
+          "specs": {
+            "Processor": "Intel i9",
+            "RAM": "32GB",
+            "Storage": "1TB SSD + 2TB HDD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tablet",
+      "name": "Tablet",
+      "solutions": ["home", "work"],
+      "products": [
+        {
+          "id": "tablet-1",
+          "name": "Standard Tablet",
+          "images": ["/placeholder-tablet.jpg"],
+          "description": "Versatile tablet for entertainment and light work.",
+          "specs": {
+            "Screen Size": "10\"",
+            "Storage": "64GB",
+            "Battery Life": "10 hours"
+          }
+        },
+        {
+          "id": "tablet-2",
+          "name": "Pro Tablet",
+          "images": ["/placeholder-tablet.jpg"],
+          "description": "High-end tablet with stylus support.",
+          "specs": {
+            "Screen Size": "12.9\"",
+            "Storage": "256GB",
+            "Battery Life": "12 hours"
+          }
+        }
+      ]
+    },
+    {
+      "id": "monitor",
+      "name": "Monitor",
+      "solutions": ["home", "work"],
+      "products": [
+        {
+          "id": "monitor-1",
+          "name": "Basic Monitor",
+          "images": ["/placeholder-monitor.jpg"],
+          "description": "Full HD monitor for everyday use.",
+          "specs": {
+            "Size": "24\"",
+            "Resolution": "1920x1080",
+            "Refresh Rate": "60Hz"
+          }
+        },
+        {
+          "id": "monitor-2",
+          "name": "Ultrawide Monitor",
+          "images": ["/placeholder-monitor.jpg"],
+          "description": "Curved ultrawide for immersive productivity.",
+          "specs": {
+            "Size": "34\"",
+            "Resolution": "3440x1440",
+            "Refresh Rate": "100Hz"
+          }
+        },
+        {
+          "id": "monitor-3",
+          "name": "Gaming Monitor",
+          "images": ["/placeholder-monitor.jpg"],
+          "description": "High refresh rate for competitive gaming.",
+          "specs": {
+            "Size": "27\"",
+            "Resolution": "2560x1440",
+            "Refresh Rate": "165Hz"
+          }
+        },
+        {
+          "id": "monitor-4",
+          "name": "4K Professional",
+          "images": ["/placeholder-monitor.jpg"],
+          "description": "Color-accurate 4K for designers.",
+          "specs": {
+            "Size": "32\"",
+            "Resolution": "3840x2160",
+            "Color Gamut": "99% sRGB"
+          }
+        }
+      ]
+    },
+    {
+      "id": "laptop-notebook",
+      "name": "Laptop & Notebook",
+      "solutions": ["home", "work"],
+      "products": [
+        {
+          "id": "laptop-1",
+          "name": "Ultrabook",
+          "images": ["/placeholder-laptop.jpg"],
+          "description": "Thin and lightweight for portability.",
+          "specs": {
+            "Processor": "Intel i5",
+            "RAM": "16GB",
+            "Storage": "512GB SSD"
+          }
+        },
+        {
+          "id": "laptop-2",
+          "name": "Business Laptop",
+          "images": ["/placeholder-laptop.jpg"],
+          "description": "Durable with enterprise features.",
+          "specs": {
+            "Processor": "Intel i7",
+            "RAM": "16GB",
+            "Storage": "1TB SSD"
+          }
+        },
+        {
+          "id": "laptop-3",
+          "name": "Gaming Laptop",
+          "images": ["/placeholder-laptop.jpg"],
+          "description": "High-performance for gamers.",
+          "specs": {
+            "Processor": "AMD Ryzen 9",
+            "RAM": "32GB",
+            "Storage": "1TB NVMe SSD"
+          }
+        },
+        {
+          "id": "laptop-4",
+          "name": "Budget Notebook",
+          "images": ["/placeholder-laptop.jpg"],
+          "description": "Affordable for students.",
+          "specs": {
+            "Processor": "Intel i3",
+            "RAM": "8GB",
+            "Storage": "256GB SSD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pos",
+      "name": "POS",
+      "solutions": ["work"],
+      "products": [
+        {
+          "id": "pos-1",
+          "name": "Retail POS System",
+          "images": ["/placeholder-pos.jpg"],
+          "description": "Complete POS solution for retail stores.",
+          "specs": {
+            "Processor": "Intel Quad Core",
+            "RAM": "8GB",
+            "Storage": "128GB SSD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "smartboard",
+      "name": "Smartboard",
+      "solutions": ["work"],
+      "products": [
+        {
+          "id": "smartboard-1",
+          "name": "Interactive Whiteboard",
+          "images": ["/placeholder-smartboard.jpg"],
+          "description": "Touch-enabled for collaborative meetings.",
+          "specs": {
+            "Size": "75\"",
+            "Resolution": "4K",
+            "Connectivity": "Wi-Fi, Bluetooth"
+          }
+        },
+        {
+          "id": "smartboard-2",
+          "name": "Smartboard Pro",
+          "images": ["/placeholder-smartboard.jpg"],
+          "description": "Advanced features for education.",
+          "specs": {
+            "Size": "86\"",
+            "Resolution": "4K",
+            "Touch Points": "20-point"
+          }
+        },
+        {
+          "id": "smartboard-3",
+          "name": "Portable Smartboard",
+          "images": ["/placeholder-smartboard.jpg"],
+          "description": "Lightweight for flexible setups.",
+          "specs": {
+            "Size": "65\"",
+            "Resolution": "1080p",
+            "Weight": "25kg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "speaker",
+      "name": "Speaker",
+      "solutions": ["home", "work"],
+      "products": [
+        {
+          "id": "speaker-1",
+          "name": "Bluetooth Speaker",
+          "images": ["/placeholder-speaker.jpg"],
+          "description": "Portable with rich sound quality.",
+          "specs": {
+            "Power": "20W",
+            "Battery Life": "15 hours",
+            "Waterproof": "IPX7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "thin-client",
+      "name": "Thin Client",
+      "solutions": ["work"],
+      "products": [
+        {
+          "id": "thin-client-1",
+          "name": "Cloud Thin Client",
+          "images": ["/placeholder-thin-client.jpg"],
+          "description": "Secure terminal for virtual environments.",
+          "specs": {
+            "Processor": "AMD Embedded",
+            "RAM": "4GB",
+            "Storage": "32GB eMMC"
+          }
+        }
+      ]
+    },
+    {
+      "id": "laptop-charging-cabinet",
+      "name": "Laptop Charging Cabinet",
+      "solutions": ["work"],
+      "products": [
+        {
+          "id": "charging-cabinet-1",
+          "name": "16-Bay Charging Cart",
+          "images": ["/placeholder-cabinet.jpg"],
+          "description": "Secure storage and charging for laptops.",
+          "specs": {
+            "Capacity": "16 Devices",
+            "Lock Type": "Digital",
+            "Material": "Steel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "digital-signage",
+      "name": "Digital Signage",
+      "solutions": ["work"],
+      "products": [
+        {
+          "id": "signage-1",
+          "name": "55\" Digital Signage",
+          "images": ["/placeholder-signage.jpg"],
+          "description": "Commercial display for advertisements.",
+          "specs": {
+            "Size": "55\"",
+            "Brightness": "500 nits",
+            "Operating System": "Android"
+          }
+        },
+        {
+          "id": "signage-2",
+          "name": "Interactive Kiosk",
+          "images": ["/placeholder-signage.jpg"],
+          "description": "Touchscreen for customer engagement.",
+          "specs": {
+            "Size": "43\"",
+            "Touch": "10-point",
+            "Processor": "Intel i5"
+          }
+        },
+        {
+          "id": "signage-3",
+          "name": "Outdoor Signage",
+          "images": ["/placeholder-signage.jpg"],
+          "description": "Weatherproof for outdoor use.",
+          "specs": {
+            "Size": "65\"",
+            "Brightness": "1500 nits",
+            "IP Rating": "IP65"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mini-pc",
+      "name": "Mini PC",
+      "solutions": ["home", "work"],
+      "products": [
+        {
+          "id": "mini-pc-1",
+          "name": "Home Mini PC",
+          "images": ["/placeholder-mini-pc.jpg"],
+          "description": "Compact for media centers.",
+          "specs": {
+            "Processor": "Intel Celeron",
+            "RAM": "8GB",
+            "Storage": "256GB SSD"
+          }
+        },
+        {
+          "id": "mini-pc-2",
+          "name": "Work Mini PC",
+          "images": ["/placeholder-mini-pc.jpg"],
+          "description": "Silent and powerful for offices.",
+          "specs": {
+            "Processor": "Intel i5",
+            "RAM": "16GB",
+            "Storage": "512GB SSD"
+          }
+        }
+      ]
+    },
+    {
+      "id": "octa-tv",
+      "name": "OCTA TV",
+      "solutions": ["home", "work"],
+      "products": [
+        {
+          "id": "octa-tv-1",
+          "name": "Smart OCTA TV",
+          "images": ["/placeholder-tv.jpg"],
+          "description": "4K HDR with streaming apps.",
+          "specs": {
+            "Size": "55\"",
+            "Resolution": "3840x2160",
+            "HDR": "HDR10+"
+          }
+        },
+        {
+          "id": "octa-tv-2",
+          "name": "OCTA TV Pro",
+          "images": ["/placeholder-tv.jpg"],
+          "description": "High-end with OLED panel.",
+          "specs": {
+            "Size": "65\"",
+            "Resolution": "4K",
+            "Panel Type": "OLED"
+          }
+        },
+        {
+          "id": "octa-tv-3",
+          "name": "Budget OCTA TV",
+          "images": ["/placeholder-tv.jpg"],
+          "description": "Affordable HD option.",
+          "specs": {
+            "Size": "43\"",
+            "Resolution": "1080p",
+            "Smart Features": "Basic"
+          }
+        },
+        {
+          "id": "octa-tv-4",
+          "name": "Commercial OCTA TV",
+          "images": ["/placeholder-tv.jpg"],
+          "description": "Designed for 24/7 operation.",
+          "specs": {
+            "Size": "75\"",
+            "Resolution": "4K",
+            "Usage": "Commercial"
+          }
+        }
+      ]
+    }
+  ]
+}
