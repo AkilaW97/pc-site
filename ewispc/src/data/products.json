@@ -1,0 +1,51 @@
+{
+    "categories": [
+      {
+        "id": "laptops",
+        "name": "Laptops",
+        "solutions": ["home", "work"],
+        "products": [
+          {
+            "id": "ultrabook-pro",
+            "name": "UltraBook Pro",
+            "images": ["/placeholder-laptop.jpg"],
+            "description": "Sleek, lightweight laptop for professionals.",
+            "specs": {
+              "Processor": "Intel i7",
+              "RAM": "16GB",
+              "Storage": "512GB SSD"
+            }
+          },
+          {
+            "id": "gaming-laptop",
+            "name": "Gaming Laptop",
+            "images": ["/placeholder-laptop.jpg"],
+            "description": "High-performance laptop for gamers.",
+            "specs": {
+              "Processor": "AMD Ryzen 9",
+              "RAM": "32GB",
+              "Storage": "1TB NVMe SSD"
+            }
+          }
+        ]
+      },
+      {
+        "id": "printers",
+        "name": "Printers",
+        "solutions": ["work"],
+        "products": [
+          {
+            "id": "laser-printer",
+            "name": "LaserJet Pro",
+            "images": ["/placeholder-printer.jpg"],
+            "description": "Fast office printer.",
+            "specs": {
+              "Type": "Laser",
+              "Speed": "40ppm",
+              "Connectivity": "Wi-Fi, Ethernet"
+            }
+          }
+        ]
+      }
+    ]
+  }

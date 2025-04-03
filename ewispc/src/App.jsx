@@ -5,8 +5,8 @@ import WhyChooseUs from './components/Home/WhyChooseUs';
 import NewsletterSignup from './components/Home/NewsletterSignup';
 import ClientCarousel from './components/Home/ClientCarousel';
 import Footer from './components/Footer';
-import HomeElectronics from './components/pages/HomeSolutions/HomeElectronics';
-import WorkElectronics from './components/pages/WorkSolutions/WorkElectronics';
+import HomeElectronics from './components/pages/HomeSolutions/HomeSolutions';
+import WorkElectronics from './components/pages/WorkSolutions/WorkSolutions';
 
 function App() {
   return (

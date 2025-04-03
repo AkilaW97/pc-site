@@ -1,4 +1,3 @@
-// src/utils/productData.js
 import products from '../components/data/products.json';
 import categories from '../components/data/categories.json';
 
