@@ -69,14 +69,14 @@ const Header = () => {
             {openSubMenu === 'products' && (
               <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 border border-gray-200 z-[9999]">
                 <Link
-                  to="/home-solutions"
+                  to="/home/Home-solutions"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors"
                   onClick={handleNavClick}
                 >
                   Home Solutions
                 </Link>
                 <Link
-                  to="/work-solutions"
+                  to="/work/Work-solutions"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 transition-colors"
                   onClick={handleNavClick}
                 >
@@ -145,10 +145,10 @@ const Header = () => {
                     {openSubMenu === 'mobileProducts' && (
                       <ul className="pl-4 mt-1 space-y-1">
                         <li>
-                          <Link to="/home-solutions" className="block py-2 px-4 hover:bg-gray-100 rounded transition-colors" onClick={handleNavClick}>Home Solutions</Link>
+                          <Link to="/home/Home-solutions" className="block py-2 px-4 hover:bg-gray-100 rounded transition-colors" onClick={handleNavClick}>Home Solutions</Link>
                         </li>
                         <li>
-                          <Link to="/work-solutions" className="block py-2 px-4 hover:bg-gray-100 rounded transition-colors" onClick={handleNavClick}>Work Solutions</Link>
+                          <Link to="/work/Work-solutions" className="block py-2 px-4 hover:bg-gray-100 rounded transition-colors" onClick={handleNavClick}>Work Solutions</Link>
                         </li>
                       </ul>
                     )}

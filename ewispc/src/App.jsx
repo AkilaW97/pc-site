@@ -26,10 +26,10 @@ function App() {
             } />
 
             {/* Home Solutions Category Pages */}
-            <Route path="/home/Home-Electronics" element={<HomeElectronics />} />
+            <Route path="/home/Home-solutions" element={<HomeElectronics />} />
             
             {/* Work Solutions Category Pages */}
-            <Route path="/work/Work-Electronics" element={<WorkElectronics />} />
+            <Route path="/work/Work-solutions" element={<WorkElectronics />} />
 
           </Routes>
         </main>

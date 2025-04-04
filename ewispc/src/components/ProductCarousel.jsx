@@ -1,24 +1,68 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const ProductCarousel = ({ products }) => {
+const ProductCarousel = ({ categories, visibleItems = 5 }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Auto-rotate when not hovered
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isHovered) {
+        setCurrentIndex(prev => (prev + 1) % categories.length);
+      }
+    }, 3000); // Rotate every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [categories.length, isHovered]);
+
+  // Get visible categories with loop-around
+  const visibleCategories = Array.from({ length: visibleItems }, (_, i) => {
+    const index = (currentIndex + i) % categories.length;
+    return categories[index];
+  });
+
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-      {products.map((product) => (
-        <div key={product.id} className="bg-white p-3 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div className="h-32 mb-3 flex items-center justify-center">
-            <img
-                src="/src/assets/Laptop3.png" // Using absolute path
-                alt={product.name}
-                className="max-h-full max-w-full object-contain"
-            />
-          </div>
-          <h3 className="font-medium text-sm mb-1">{product.name}</h3>
-          <p className="text-gray-600 text-xs line-clamp-2">
-            {product.description}
-          </p>
-        </div>
-      ))}
+    <div 
+      className="relative py-8"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="flex justify-center gap-6">
+        {visibleCategories.map((category) => (
+          <Link 
+            key={category.id} 
+            to={`/category/${category.id}`}
+            className="group block w-48 text-center"
+          >
+            <div className="relative overflow-hidden rounded-full bg-gray-100 w-40 h-40 mx-auto mb-3">
+              <img
+                src="/src/assets/Laptop3.png"
+                alt={category.name}
+                className="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <h3 className="text-lg font-medium transition-colors group-hover:text-blue-500">
+              {category.name}
+            </h3>
+          </Link>
+        ))}
+      </div>
+
+      {/* Navigation dots */}
+      <div className="flex justify-center mt-8 space-x-2">
+        {categories.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === currentIndex % categories.length 
+                ? 'bg-blue-500 w-4' 
+                : 'bg-gray-300 hover:bg-gray-400'
+            }`}
+          />
+        ))}
+      </div>
     </div>
   );
 };
