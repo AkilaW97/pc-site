@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
-const ProductCarousel = ({ categories, visibleItems = 5 }) => {
+const ProductCarousel = ({ categories, visibleItems = 5, onSelectCategory }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -11,7 +10,7 @@ const ProductCarousel = ({ categories, visibleItems = 5 }) => {
       if (!isHovered) {
         setCurrentIndex(prev => (prev + 1) % categories.length);
       }
-    }, 3000); // Rotate every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [categories.length, isHovered]);
@@ -22,6 +21,11 @@ const ProductCarousel = ({ categories, visibleItems = 5 }) => {
     return categories[index];
   });
 
+  // Handle category click
+  const handleClick = (categoryId) => {
+    onSelectCategory(categoryId);
+  };
+
   return (
     <div 
       className="relative py-8"
@@ -30,10 +34,10 @@ const ProductCarousel = ({ categories, visibleItems = 5 }) => {
     >
       <div className="flex justify-center gap-6">
         {visibleCategories.map((category) => (
-          <Link 
-            key={category.id} 
-            to={`/category/${category.id}`}
-            className="group block w-48 text-center"
+          <button 
+            key={category.id}
+            onClick={() => handleClick(category.id)}
+            className="group block w-48 text-center focus:outline-none"
           >
             <div className="relative overflow-hidden rounded-full bg-gray-100 w-40 h-40 mx-auto mb-3">
               <img
@@ -45,7 +49,7 @@ const ProductCarousel = ({ categories, visibleItems = 5 }) => {
             <h3 className="text-lg font-medium transition-colors group-hover:text-blue-500">
               {category.name}
             </h3>
-          </Link>
+          </button>
         ))}
       </div>
 
