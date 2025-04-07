@@ -22,11 +22,12 @@ const HomeSolutions = () => {
       <Header />
       
       <div className="container mx-auto px-4 py-8 max-w-7xl">
-        <div className="bg-green-700 rounded-xl shadow-sm mb-12 py-6">
-          <h2 className="text-3xl font-bold text-center text-white">Home Solutions</h2>
+        
+        <div className="mb-4 bg-green-200 rounded-xl shadow-sm p-6">
+        <div className="bg-green-200 rounded-xl  mb-4 py-6">
+          <h2 className="text-3xl font-bold text-center text-black">Home Solutions</h2>
         </div>
         
-        <div className="mb-16 bg-green-200 rounded-xl shadow-sm p-6">
           <ProductCarousel 
             categories={homeCategories} 
             itemsPerSlide={5}

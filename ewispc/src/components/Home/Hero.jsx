@@ -238,10 +238,22 @@ const Hero = () => {
             Discover our curated selection of laptops, smart TVs, and interactive displays designed to enhance your digital lifestyle.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-md font-medium transition">
+            <button className="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-md font-medium transition">
               Shop Now
             </button>
-            <button className="border border-white hover:bg-blue-700 px-8 py-4 rounded-md font-medium transition">
+            <button className="relative border border-white px-8 py-4 rounded-md font-medium bg-transparent text-white overflow-hidden group">
+              {/* Top border - animates first */}
+              <span className="absolute top-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300 ease-out -mt-[1px] ml-[1px] mr-[1px]"></span>
+             
+              {/* Right border - animates second */}
+              <span className="absolute top-0 right-0 w-0.5 h-0 bg-green-600 group-hover:h-full transition-all duration-300 ease-out delay-150 -mr-[1px] mt-[1px] mb-[1px]"></span>
+             
+              {/* Bottom border - animates third */}
+              <span className="absolute bottom-0 right-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300 ease-out delay-300 -mb-[1px] ml-[1px] mr-[1px]"></span>
+             
+              {/* Left border - animates last */}
+              <span className="absolute bottom-0 left-0 w-0.5 h-0 bg-green-400 group-hover:h-full transition-all duration-300 ease-out delay-[450ms] -ml-[1px] mt-[1px] mb-[1px]"></span>
+             
               Explore
             </button>
           </div>

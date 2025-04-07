@@ -7,6 +7,7 @@ import ClientCarousel from './components/Home/ClientCarousel';
 import Footer from './components/Footer';
 import HomeElectronics from './components/pages/HomeSolutions/HomeSolutions';
 import WorkElectronics from './components/pages/WorkSolutions/WorkSolutions';
+import AboutUs from './components/pages/AboutUs';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
                 <ClientCarousel />
               </>
             } />
+
+            {/* About Us Page */}
+            <Route path="/about" element={<AboutUs />} />
 
             {/* Home Solutions Category Pages */}
             <Route path="/home/Home-solutions" element={<HomeElectronics />} />
