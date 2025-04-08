@@ -39,7 +39,7 @@ const HomeSolutions = () => {
       </section>
       
       <div className="container mx-auto px-4 py-8 max-w-7xl">
-      <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="max-w-8xl mx-auto px-4 py-8">
           <ProductCarousel 
                     categories={homeCategories} 
                     itemsPerSlide={5}
