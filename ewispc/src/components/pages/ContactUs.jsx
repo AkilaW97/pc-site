@@ -61,6 +61,7 @@ const ContactUsPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
+      
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl mt-6">
@@ -195,7 +196,7 @@ const ContactUsPage = () => {
               {/* Google Maps Embed */}
               <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256012259!2d-73.98784468459382!3d40.74844047932799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1623251157864!5m2!1sen!2sus"
+                  src="https://maps.google.com/maps?q=ewis+rajagiriya&output=embed"
                   width="100%"
                   height="400"
                   style={{ border: 0 }}
@@ -217,9 +218,9 @@ const ContactUsPage = () => {
                     </svg>
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <p>123 Business Avenue</p>
-                    <p>New York, NY 10001</p>
-                    <p>United States</p>
+                    <p>441/7, </p>
+                    <p>2nd Lane,</p>
+                    <p>Kotte Rd.</p>
                   </div>
                 </div>
 
@@ -230,7 +231,7 @@ const ContactUsPage = () => {
                     </svg>
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <p>+1 (555) 123-4567</p>
+                    <p>0117 520 520</p>
                   </div>
                 </div>
 
@@ -241,7 +242,7 @@ const ContactUsPage = () => {
                     </svg>
                   </div>
                   <div className="ml-3 text-base text-gray-500">
-                    <p>info@yourcompany.com</p>
+                    <p>info@ewispc.com</p>
                   </div>
                 </div>
               </div>
