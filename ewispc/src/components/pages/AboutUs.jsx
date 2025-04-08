@@ -81,10 +81,10 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header />
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[#03613a] to-green-600 text-white py-20 md:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-r from-[#03613a] to-green-600 text-white py-20 md:py-32 overflow-hidden flex-grow">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-[url('/pattern.svg')] bg-cover bg-center"></div>
         </div>
@@ -94,12 +94,6 @@ const AboutUs = () => {
             <p className="text-xl md:text-2xl opacity-90 mb-8">
               Pioneering solutions that transform the way people live and work
             </p>
-            <Link
-              to="/contact"
-              className="inline-block bg-white text-green-950 hover:bg-gray-100 font-semibold px-8 py-3 rounded-lg transition duration-300 transform hover:scale-105"
-            >
-              Get in Touch
-            </Link>
           </div>
         </div>
       </section>
@@ -268,9 +262,9 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
-
-      
     </div>
+
+    
   );
 };
 

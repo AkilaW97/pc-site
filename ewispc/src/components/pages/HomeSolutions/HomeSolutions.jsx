@@ -20,10 +20,36 @@ const HomeSolutions = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
+
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-r from-[#03613a] to-green-600 text-white py-20 md:py-32 overflow-hidden flex-grow">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-[url('/pattern.svg')] bg-cover bg-center"></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Home Solutions</h1>
+            <p className="text-xl md:text-2xl opacity-90">
+                Innovative technologies to simplify and enhance everyday living.
+            </p>
+          </div>
+        </div>
+
+      </section>
       
       <div className="container mx-auto px-4 py-8 max-w-7xl">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+          <ProductCarousel 
+                    categories={homeCategories} 
+                    itemsPerSlide={5}
+                    onSelectCategory={handleCategorySelect}
+                  />
+      </div>
+
+      
         
-        <div className="mb-4 bg-green-200 rounded-xl shadow-sm p-6">
+        {/* <div className="mb-4 bg-green-200 rounded-xl shadow-sm p-6">
         <div className="bg-green-200 rounded-xl  mb-4 py-6">
           <h2 className="text-3xl font-bold text-center text-black">Home Solutions</h2>
         </div>
@@ -33,7 +59,7 @@ const HomeSolutions = () => {
             itemsPerSlide={5}
             onSelectCategory={handleCategorySelect}
           />
-        </div>
+        </div> */}
 
         {/* Products Grid with 3D Effects */}
         <div className="bg-white rounded-xl shadow-md overflow-hidden p-6">

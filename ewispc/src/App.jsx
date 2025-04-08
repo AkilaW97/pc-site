@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 import HomeElectronics from './components/pages/HomeSolutions/HomeSolutions';
 import WorkElectronics from './components/pages/WorkSolutions/WorkSolutions';
 import AboutUs from './components/pages/AboutUs';
+import ContactUs from './components/pages/ContactUs';
+import DriverSearchPage from './components/pages/DriverSearchPage';
 
 function App() {
   return (
@@ -28,6 +30,12 @@ function App() {
 
             {/* About Us Page */}
             <Route path="/about" element={<AboutUs />} />
+
+            {/* Contact Us Page */}
+            <Route path="/contact" element={<ContactUs />} />
+
+            {/* DriverDownload Page */}
+            <Route path="/support" element={<DriverSearchPage />} />
 
             {/* Home Solutions Category Pages */}
             <Route path="/home/Home-solutions" element={<HomeElectronics />} />
